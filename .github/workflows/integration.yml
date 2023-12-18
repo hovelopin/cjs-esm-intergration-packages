@@ -23,5 +23,10 @@ jobs:
           git config --global user.name "hovelopin"
           npm version patch
 
+      - name: check name
+        run: |
+          NAME = ${npm whoami}
+          echo "npm whoami result: $NAME"
+
       - name: ✅ npm publish
         run: npm publish
