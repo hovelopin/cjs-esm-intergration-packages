@@ -18,7 +18,10 @@ jobs:
           node-version: 18
           
       - name: ✅ packages version patch
-        run: npm version patch
+        run: |
+          git config --global user.email "kimhojin3714@naver.com"
+          git config --global user.name "hovelopin"
+          npm version patch
 
       - name: ✅ npm publish
         run: npm punblish
