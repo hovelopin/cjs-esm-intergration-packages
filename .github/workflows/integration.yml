@@ -24,4 +24,4 @@ jobs:
           npm version patch
 
       - name: ✅ npm publish
-        run: npm punblish
+        run: npm publish
