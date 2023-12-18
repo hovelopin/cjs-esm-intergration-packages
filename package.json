@@ -1,0 +1,21 @@
+{
+  "name": "hp-test-packages",
+  "version": "1.0.17",
+  "main": "./src/index.ts",
+  "repository": "https://github.com/hovelopin/cjs-esm-intergration-packages.git",
+  "author": "hovelopin <kimhojin3714@naver.com>",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    } 
+  },
+  "scripts": {
+    "build": "node ./build.mjs"
+  },
+  "dependencies": {
+    "esbuild": "^0.19.9"
+  },
+  "devDependencies": {}
+}
