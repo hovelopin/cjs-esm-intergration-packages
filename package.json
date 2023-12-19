@@ -17,5 +17,10 @@
   "dependencies": {
     "esbuild": "^0.19.9"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+
 }
