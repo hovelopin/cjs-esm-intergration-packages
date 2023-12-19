@@ -23,8 +23,7 @@ jobs:
           git config --global user.name "hovelopin"
           npm version patch
 
-      - name: check name
-        run: npm whoami
-
       - name: ✅ npm publish 
         run: npm publish --access=public
+        env:
+          NPM_CONFIG_TOKEN: ${{ secrets.GITHUB_TOKEN }}
