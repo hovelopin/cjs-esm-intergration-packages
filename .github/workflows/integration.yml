@@ -26,5 +26,5 @@ jobs:
       - name: check name
         run: npm whoami
 
-      - name: ✅ npm publish
-        run: npm publish
+      - name: ✅ npm publish 
+        run: npm publish --access=public
